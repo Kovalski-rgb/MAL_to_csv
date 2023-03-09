@@ -14,7 +14,7 @@ def openfname():
     return fname
 
 def savefname():
-    fname = filedialog.asksaveasfilename(initialdir = "/",title = "Save csv as...", filetype = ((".csv","*.csv"),(".csv","*.csv")))
+    fname = filedialog.asksaveasfilename(initialdir = "/",title = "Save csv as...", filetypes = ((".csv","*.csv"),(".csv","*.csv")))
     if not fname.endswith('.csv'):
         print('Fixed \'.csv\'-less save fname')
         fname += '.csv'
